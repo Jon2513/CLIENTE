@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Demo: tu primera depuración de código JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      h1 {
+        font-size: 1.5em
+      }
+      input, button {
+        min-width: 72px;
+        min-height: 36px;
+        border: 1px solid grey;
+      }
+      label, input, button {
+        display: block;
+      }
+      input {
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demo: tu primera depuración de código JavaScript</h1>
+	<p>En este primer ejemplo puedes ver cómo incluir un archivo js externo en nuestra web.</p>
+	<p>Pulsa el botón derecho de tu ratón en esta web y "Ver código fuente de esta página", ahora fíjate cómo la etiqueta "script" hace referencia la archivo "primer-debug-javascript.js", como si se tratara de un css externo.</p>
+	<p>Pulsa encima de "primer-javascript.js" y verás tu pimer código JavaScript.</p>
+	<p>Esta primera web pretende sumar dos números. Pero si la pruebas un poco verás que, en lugar de eso, los concatena.</p>
+	<p>Intenta analizar cómo comprueba que se ha pulsado el botón Suma, cómo recoge el primer número y el segundo y cómo pinta la solución.</p>
+	<p>No te asustes, no hace falta que comprendas aún este código sólamente que te vayas familiarizando con el.</p>
+	<p>Intenta descargar el archivo "index.html", junto con el archivo "primer-javascript.js" en tu escitorio e intenta que funcione, por ahora basta con eso.</p>
+	<p>En el siguiente apartado aprenderás a depurar este código, para comprenter cómo arreglarlo y que sume los números en lugar de concatenarlos.</p>
+	
+    <label for="num1">Number 1</label>
+    <input placeholder="Number 1" id="num1">
+    <label for="num2">Number 2</label>
+    <input placeholder="Number 2" id="num2">
+    <button>Suma Number 1 and Number 2</button>
+    <h2></h2>
+    <script src="js/primer-debug-javascript.js"></script>
+  </body>
+</html>
