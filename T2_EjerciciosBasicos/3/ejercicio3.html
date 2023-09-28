@@ -9,14 +9,17 @@
     <p>La suma de los múltiplos de 23 es: <span id="sumaMultiplos"></span></p>
 
     <script>
-        var suma = 0;
-        for (var i = 1; i < 1000; i++) {
-            if (i % 23 === 0) {
-                document.getElementById("multiplesList").innerHTML += "<li>" + i + "</li>";
-                suma += i;
-            }
-        }
-        document.getElementById("sumaMultiplos").textContent = suma;
+       var suma = 0;
+    document.write("<ul id='multiplesList'></ul>");
+    for (var i = 1; i < 1000; i++) {
+        if (i % 23 === 0) {
+            document.write("<li>" + i + "</li>");
+             suma += i;
+    }
+}
+    document.write("<p id='sumaMultiplos'>" + suma + "</p>");
+
     </script>
+
 </body>
 </html>
